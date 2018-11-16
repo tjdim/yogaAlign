@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YogaAlign</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/ytt.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='heart.ico') }}">
+</head>
+<body>
+	<!--<div class="marble-boarder"></div>-->
+     <div class="welcome"> YogaAlign. </div>
+     <div id="recorder">
+     <button id="record"> Record </button>
+     <button id="stop">Stop</button>
+     <a id="download"></a>
+    <script type="text/javascript" src="{{ url_for('static', filename='recorder.js') }}"></script>   </div>
+    
+    <div class="frametitles"> COME INTO WARRIOR II </div>
+    <img id="refpose" src="{{ url_for('static', filename='refpose.png') }}">
+    <img id="video" src="{{ url_for('video_viewer') }}">
+    
+    <form method="POST" action="tolerance">
+            <input type="range" min="0" max="100" name="tolerance" />
+            <input type="submit" value="submit tolerance" />
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+1. Download youtube video
+2. Dissect Frames
+3. sort file names by number, see get_youtube_frames.ipyn in get_frames folder
+4. Find start frame and end frame of pose/ transition
+5. move  pics inbetween these frames to labeled folder
+
+get_angles_from_youtube_frames.ipyn
+6. run analyze_images -> write out csv file with frames
+
+7.Go to testsuite show csv files 
+8.process add label using
